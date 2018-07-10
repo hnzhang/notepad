@@ -15,6 +15,7 @@ const initialState = {
 	name:"Harry's node"
 };
 
+//defintion of the root reducer
 export default (state = initialState, action) => {
 	switch(action.type){
 		case 'ADD_NOTE':
