@@ -1,0 +1,5 @@
+const GET_NOTES = 'GET_NOTES';
+const ADD_NOTE = 'ADD_NOTE';
+const REMOVE_NOTE = 'REMOVE_NOTE';
+
+export {GET_NOTES, ADD_NOTE, REMOVE_NOTE}

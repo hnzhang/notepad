@@ -1,3 +1,4 @@
+import * as constants from '../constants/index';
 
 const initialState = {
 	notes: [
@@ -18,17 +19,17 @@ const initialState = {
 //defintion of the root reducer
 export default (state = initialState, action) => {
 	switch(action.type){
-		case 'ADD_NOTE':
+		case constants.ADD_NOTE:
 			return {
 				...state,
 				notes: [...state.notes, action.note]
 			};
-		case 'REMOVE_NOTE':
+		case constants.REMOVE_NOTE:
 			return {
 				...state,
 				notes: state.notes.filter(note => note !== action.note)
 			}
-		case 'GET_NOTES':
+		case constants.GET_NOTES:
 			return {
 				...state,
 			}
